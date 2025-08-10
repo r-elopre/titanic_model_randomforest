@@ -166,7 +166,6 @@ Developed as part of an AI project to demonstrate ML workflows with Titanic data
 
 > Visual overview of the end-to-end pipeline. GitHub renders Mermaid automatically.
 
-```mermaid
 flowchart LR
     A[Raw Titanic Data<br/>CSV] --> B[Data Inspection<br/>nulls, dtypes, duplicates]
     B --> C[Data Cleaning<br/>impute/drop, drop leaks]
@@ -180,19 +179,6 @@ flowchart LR
     J --> K[Artifacts<br/>predictions.csv, plots]
     K --> L[Next Steps<br/>tuning, CV, importance]
 ```
-
-### Step-by-step (quick reference)
-1. **Inspection** → Check missing values, types, duplicates.  
-2. **Cleaning** → Impute/remove nulls; drop leakage columns.  
-3. **EDA (optional)** → Plot key distributions/correlations to guide features.  
-4. **Feature Processing** → Create/transform features if needed.  
-5. **Encoding** → One-hot encode categoricals (e.g., `Sex`, `Embarked`, `Deck_*`).  
-6. **Scaling** → Standardize numerics for model stability.  
-7. **Split** → 80/20 train-test split.  
-8. **Train** → `RandomForestClassifier(random_state=42)`.  
-9. **Evaluate** → Accuracy, precision/recall/F1, confusion matrix.  
-10. **Artifacts** → Save `titanic_rf_predictions.csv` and plots.  
-11. **Iterate** → Hyperparameter tuning, CV, feature importance.
 
 📷 ![Titanic dataset file location in project folder](images/image-5.png)
 
