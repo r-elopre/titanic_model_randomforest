@@ -49,7 +49,7 @@ Located in the `data/` directory:
   - Numerical features scaled
   - Categorical features one-hot encoded
 
-📷 ![Titanic dataset file location in project folder](images/image-1.png)
+📷 ![dataset feature structure](images/image-1.png)
 
 ---
 
@@ -65,7 +65,7 @@ titanic_model_randomforest/
 └── venv/ (virtual environment)
 ```
 
-📷 ![Titanic dataset file location in project folder](images/image-2.png)
+📷 ![folder structure diagram](images/image-2.png)
 
 ---
 
@@ -108,7 +108,7 @@ python titanic_model_randomforest.py
 - Confusion matrix heatmap
 - Predictions saved to `titanic_rf_predictions.csv`
 
-📷 ![Titanic dataset file location in project folder](images/image-3.png)
+📷 ![running the script in terminal](images/image-3.png)
 
 ---
 
@@ -124,7 +124,7 @@ Classification Report:
     accuracy                           0.79       179
 ```
 
-📷 ![Titanic dataset file location in project folder](images/image-4.png)
+📷 ![matrix heatmap](images/image-4.png)
 
 ---
 
@@ -179,6 +179,4 @@ flowchart LR
     J --> K[Artifacts<br/>predictions.csv, plots]
     K --> L[Next Steps<br/>tuning, CV, importance]
 ```
-
-📷 ![Titanic dataset file location in project folder](images/image-5.png)
 
