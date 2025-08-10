@@ -1,5 +1,13 @@
 # Titanic Survival Prediction with Random Forest
 
+<p align="center">
+  <a href="https://youtu.be/E2UKkWUbaJM?si=BiDdCglgDEO7vWs2">
+    <img src="https://img.youtube.com/vi/E2UKkWUbaJM/maxresdefault.jpg" alt="Titanic Random Forest Model Video">
+  </a>
+  <br/>
+  <em>Click the thumbnail to watch on YouTube</em>
+</p>
+
 ## Overview
 This project applies a **Random Forest Classifier** to predict passenger survival on the Titanic using a **preprocessed dataset** (`train_scaled.csv`). The data has been cleaned, encoded, and scaled to ensure optimal model performance.
 
