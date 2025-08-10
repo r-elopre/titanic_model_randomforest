@@ -49,7 +49,7 @@ Located in the `data/` directory:
   - Numerical features scaled
   - Categorical features one-hot encoded
 
-📷 *Add image here of dataset feature structure*
+📷 ![Titanic dataset file location in project folder](images/image-1.png)
 
 ---
 
@@ -65,7 +65,7 @@ titanic_model_randomforest/
 └── venv/ (virtual environment)
 ```
 
-📷 *Add image here of folder structure diagram*
+📷 ![Titanic dataset file location in project folder](images/image-2.png)
 
 ---
 
@@ -73,7 +73,7 @@ titanic_model_randomforest/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/r-elopre/titanic_model_randomforest
+git clone https://github.com/username/titanic_model_randomforest.git
 cd titanic_model_randomforest
 ```
 
@@ -108,7 +108,7 @@ python titanic_model_randomforest.py
 - Confusion matrix heatmap
 - Predictions saved to `titanic_rf_predictions.csv`
 
-📷 *Add image here of running the script in terminal*
+📷 ![Titanic dataset file location in project folder](images/image-3.png)
 
 ---
 
@@ -124,7 +124,7 @@ Classification Report:
     accuracy                           0.79       179
 ```
 
-📷 *Add image here of confusion matrix heatmap*
+📷 ![Titanic dataset file location in project folder](images/image-4.png)
 
 ---
 
@@ -151,4 +151,48 @@ Classification Report:
 
 ---
 
+## License
+This project is licensed under the MIT License. See `LICENSE` for details.
+
+---
+
+## Author
+Developed as part of an AI project to demonstrate ML workflows with Titanic data.
+
+
+---
+
+## Workflow Diagram
+
+> Visual overview of the end-to-end pipeline. GitHub renders Mermaid automatically.
+
+```mermaid
+flowchart LR
+    A[Raw Titanic Data<br/>CSV] --> B[Data Inspection<br/>nulls, dtypes, duplicates]
+    B --> C[Data Cleaning<br/>impute/drop, drop leaks]
+    C --> D[EDA (Optional)<br/>distributions, correlations]
+    D --> E[Feature Processing<br/>derive features]
+    E --> F[Encoding<br/>one-hot categorical]
+    F --> G[Scaling<br/>standardize numeric]
+    G --> H[Train/Test Split<br/>80/20]
+    H --> I[Model Training<br/>RandomForestClassifier]
+    I --> J[Evaluation<br/>accuracy, report, confusion matrix]
+    J --> K[Artifacts<br/>predictions.csv, plots]
+    K --> L[Next Steps<br/>tuning, CV, importance]
+```
+
+### Step-by-step (quick reference)
+1. **Inspection** → Check missing values, types, duplicates.  
+2. **Cleaning** → Impute/remove nulls; drop leakage columns.  
+3. **EDA (optional)** → Plot key distributions/correlations to guide features.  
+4. **Feature Processing** → Create/transform features if needed.  
+5. **Encoding** → One-hot encode categoricals (e.g., `Sex`, `Embarked`, `Deck_*`).  
+6. **Scaling** → Standardize numerics for model stability.  
+7. **Split** → 80/20 train-test split.  
+8. **Train** → `RandomForestClassifier(random_state=42)`.  
+9. **Evaluate** → Accuracy, precision/recall/F1, confusion matrix.  
+10. **Artifacts** → Save `titanic_rf_predictions.csv` and plots.  
+11. **Iterate** → Hyperparameter tuning, CV, feature importance.
+
+📷 ![Titanic dataset file location in project folder](images/image-5.png)
 
